@@ -1,9 +1,0 @@
-String logo = "assets/images/ada logo.png";
-String gmailLogo = 'assets/images/Gmail-Logo.png';
-String facebookLogo = 'assets/images/logo facebook.png';
-String cup = 'assets/images/cup.png';
-String coin = 'assets/images/coin.png';
-String img = 'assets/images/sillicon.png';
-String img3 = 'assets/images/img3.jpg';
-String attention = 'assets/images/attention.jpg';
-String writeDown = 'assets/images/white down.jpg';
