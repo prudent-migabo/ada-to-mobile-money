@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182992590023",
+    "project_id": "crypto-mob-app",
+    "storage_bucket": "crypto-mob-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182992590023:android:5dd454b97f596038151ae2",
+        "android_client_info": {
+          "package_name": "com.example.crypto_mob_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182992590023-86ni76kf281jcuv9e0hu27hufes9fenu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaVC0Dab92ixQPHYOrKD9meV8P3Gyua5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182992590023-86ni76kf281jcuv9e0hu27hufes9fenu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
