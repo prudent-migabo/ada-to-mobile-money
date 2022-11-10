@@ -24,12 +24,12 @@ class TransactionHistory extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-         // SizedBox(height: 10,),
           Container(
             margin: EdgeInsets.only(left: 20),
               child: Text('Transaction history', style: TextStyle(fontSize: 22, color: kMainColor, fontWeight: boldStyle),)),
           Expanded(
             child: ListView.builder(
+              padding: EdgeInsets.only(top: 10),
                itemCount: 10,
                itemBuilder: (context, index){
                  return Column(
@@ -37,13 +37,13 @@ class TransactionHistory extends StatelessWidget {
                      ListTile(
                        leading: CircleAvatar(
                          radius: 15,
-                         backgroundColor: Colors.red[100],
+                         backgroundColor: Color(0xfffdd6d8),
                          child: Icon(Icons.call_made_sharp, color: Colors.red, size: 17,),
                        ),
-                       title: Text("\$2,900 ADA"),
+                       title: Text("\$2,900 ADA", style: bold,),
                        trailing: Card(
                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                         color: Colors.red,
+                         color: Color(0xfffd4a55),
                          child: Container(
                            width: 70,
                            height: 20,
@@ -51,7 +51,9 @@ class TransactionHistory extends StatelessWidget {
                          ),
                        ),
                      ),
-                     Divider(height: 1, color: Colors.grey,),
+                     SizedBox(height: 10,),
+                     Divider(height: 1, color: Colors.grey[300],),
+                     SizedBox(height: 10,),
                    ],
                  );
                }),

@@ -3,6 +3,7 @@ import 'package:crypto_mob_app/repositories/repositories.dart';
 import 'package:crypto_mob_app/utils/utils.dart';
 import 'package:crypto_mob_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 class CryptoReceivedComponent extends StatefulWidget {
@@ -45,7 +46,7 @@ class _CryptoReceivedComponentState extends State<CryptoReceivedComponent> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 40),
             height: 80,
-            decoration: containerRoundedForDash().copyWith(color: Colors.green),
+            decoration: containerRoundedForDash().copyWith(color: Color(0xff13d449)),
           ),),
           Positioned(
               top: 15,
@@ -72,14 +73,13 @@ class _CryptoReceivedComponentState extends State<CryptoReceivedComponent> {
                       SizedBox(height: 15,),
                       Text('ADA Received', style: TextStyle(color: whiteColor, fontSize: 16),),
                       Text("\$${getValue(priceModel!.value)}" != "" ? "\$${getValue(priceModel.value)}" : "\$00.00" , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: whiteColor),),
-                      SizedBox(height: 5,),
                       SizedBox(
                         width: 150,
                         child: RoundedButtonWithIcon(
                           borderColor: Colors.transparent,
-                          primary: Colors.black38,
+                          primary: Color(0xff0b3a62),
                           radius: 20,
-                          icon: Icon(Icons.add_to_home_screen, color: whiteColor, size: 16,),
+                          icon: Icon(FontAwesomeIcons.arrowUpRightFromSquare, color: whiteColor, size: 16,),
                           label: Text('See wallets', style: TextStyle(fontSize: 12),),
                             onPressed: (){},
                           ),

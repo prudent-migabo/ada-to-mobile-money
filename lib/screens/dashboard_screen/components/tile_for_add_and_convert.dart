@@ -22,7 +22,7 @@ class TileForAddAndConvert extends StatelessWidget {
             leading: CircleAvatar(
               radius: 20,
               backgroundColor: kMainColor,
-              child: Center(child: Icon(Icons.add, color: whiteColor,),),
+              child: Center(child: Icon(Icons.add, color: whiteColor, size: 27),),
             ),
             title: Text('Add Wallet'),
             trailing: Icon(Icons.arrow_right_alt, size: 35, color: kMainColor,),
@@ -37,8 +37,8 @@ class TileForAddAndConvert extends StatelessWidget {
               },
             leading: CircleAvatar(
               radius: 20,
-              backgroundColor: Colors.lightBlueAccent.shade400,
-              child: Center(child: Icon(Icons.cached_rounded, color: whiteColor,),),
+              backgroundColor: Color(0xff42a7ff),
+              child: Center(child: Icon(Icons.cached_rounded, color: whiteColor, size: 27,),),
             ),
             title: Text('Convert ADA'),
             trailing: Icon(Icons.arrow_right_alt, size: 35, color: Colors.greenAccent.shade400),
