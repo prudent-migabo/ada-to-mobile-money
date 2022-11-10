@@ -38,8 +38,9 @@ Future popupForChoiceDevise (
               width: double.infinity,
               height: 50,
               child: RoundedButtonWithoutIcon(
+                elevation: 0,
                 label: Text('ADA to Mobile Money', style: TextStyle(color: kMainColor, fontWeight: boldStyle),),
-                primary: Colors.blue.shade50,
+                primary: Color(0xffe8f0f7),
                 radius: 40,
                 onPressed: (){
                   Navigator.pushReplacementNamed(context, ConvertAdaScreen.routeName);
@@ -53,8 +54,9 @@ Future popupForChoiceDevise (
               width: double.infinity,
               height: 50,
               child: RoundedButtonWithoutIcon(
+                elevation: 0,
                 label: Text('Mobile Money to ADA', style: TextStyle(color: kMainColor, fontWeight: boldStyle),),
-                primary: Colors.blue.shade50,
+                primary: Color(0xffe8f0f7),
                 radius: 40,
                 onPressed: (){
                  Navigator.pushReplacementNamed(context,  ConvertMobileScreen.routeName);

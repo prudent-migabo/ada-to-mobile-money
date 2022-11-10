@@ -15,9 +15,9 @@ void warningPopup (
       insetPadding: EdgeInsets.all(10),
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 15),
-        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
         width: double.infinity,
-        height: 420,
+        height: 440,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.white,),
@@ -32,11 +32,13 @@ void warningPopup (
                 Navigator.pop(context);
               },),),
            // SizedBox(height: 15,),
-            Center(child: Image(image: AssetImage(Assets.attention), width: 90, height: 90,)),
+            Center(child: Image(image: AssetImage(Assets.attention), width: 120, height: 120,)),
             SizedBox(height: 15,),
-            Text("On the following screen, you will see the set of 15 random words. This is your wallet recovery phrase. It can be entered in any version of ADA in order to back up or restore your wallet's funds and private key"),
+            Text("On the following screen, you will see the set of 15 random words. This is your wallet recovery phrase. It can be entered in any version of ADA in order to back up or restore your wallet's funds and private key",
+              style: TextStyle(height: 1.2,),
+            ),
             SizedBox(height: 20,),
-            Text("Make sure nobody is looking at your screen unless you want them to have access to your funds"),
+            Text("Make sure nobody is looking at your screen unless you want them to have access to your funds", style: TextStyle(height: 1.2,),),
             SizedBox(height: 20,),
             SizedBox(
               width: double.infinity,

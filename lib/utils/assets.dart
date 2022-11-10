@@ -6,7 +6,7 @@ class Assets {
   static const String coin = 'assets/images/coin.png';
   static const String img = 'assets/images/sillicon.png';
   static const String img3 = 'assets/images/img3.jpg';
-  static const String attention = 'assets/images/attention.jpg';
-  static const String writeDown = 'assets/images/white down.jpg';
+  static const String attention = 'assets/images/attention img.PNG';
+  static const String recovery = 'assets/images/recovery img.PNG';
   static const String image1 = 'assets/images/image1.jpg';
 }
