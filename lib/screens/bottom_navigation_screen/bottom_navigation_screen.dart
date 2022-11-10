@@ -1,6 +1,7 @@
 import 'package:crypto_mob_app/screens/screens.dart';
 import 'package:crypto_mob_app/utils/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
    BottomNavigationScreen({Key? key}) : super(key: key);
@@ -46,7 +47,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
           selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home_sharp),
+              icon: Icon(Icons.home),
               label: 'Home',
             ),
             BottomNavigationBarItem(

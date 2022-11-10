@@ -24,7 +24,7 @@ class SuccessfulCreationWallet extends StatelessWidget {
             SizedBox(height: 60,),
             Text("Wallet created successfuly", style: TextStyle(color: primary, fontWeight: boldStyle, fontSize: 35), textAlign: TextAlign.center,),
             SizedBox(height: 80,),
-            Image(image: AssetImage(cup)),
+            Image(image: AssetImage(Assets.cup)),
             SizedBox(height: 120,),
             CustomButton(text: 'Go to wallet', onPressed: (){
               _onSubmit(context);

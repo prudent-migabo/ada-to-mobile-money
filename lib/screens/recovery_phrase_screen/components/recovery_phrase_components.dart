@@ -34,7 +34,7 @@ class RecoveryPhraseComponents extends StatelessWidget {
             ],
           ),
           SizedBox(height: 50,),
-          Center(child: Image(image: AssetImage(writeDown), width: 150, height: 150,),),
+          Center(child: Image(image: AssetImage(Assets.writeDown), width: 150, height: 150,),),
           SizedBox(height: 20,),
           Text('Make sure you have carefully written down your recovery phrase somewhere safe. You will need this phrase to use and restore your wallet.'),
           SizedBox(height: 5,),

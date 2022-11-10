@@ -25,7 +25,7 @@ class SuccessfulRegistrationScreen extends StatelessWidget {
             SizedBox(height: 60,),
             Text("Account created successfuly", style: TextStyle(color: kMainColor, fontWeight: boldStyle, fontSize: 35), textAlign: TextAlign.center,),
             SizedBox(height: 80,),
-            Image(image: AssetImage(cup)),
+            Image(image: AssetImage(Assets.cup)),
             SizedBox(height: 120,),
             CustomButton(text: 'Proceed', onPressed: (){
               Navigator.pushNamedAndRemoveUntil(context, LoginScreen.routeName, (route) => false);

@@ -32,7 +32,7 @@ void warningPopup (
                 Navigator.pop(context);
               },),),
            // SizedBox(height: 15,),
-            Center(child: Image(image: AssetImage(attention), width: 90, height: 90,)),
+            Center(child: Image(image: AssetImage(Assets.attention), width: 90, height: 90,)),
             SizedBox(height: 15,),
             Text("On the following screen, you will see the set of 15 random words. This is your wallet recovery phrase. It can be entered in any version of ADA in order to back up or restore your wallet's funds and private key"),
             SizedBox(height: 20,),

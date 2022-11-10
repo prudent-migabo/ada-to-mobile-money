@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       splash: Center(
-        child: Image(image: AssetImage(logo),),
+        child: Image(image: AssetImage(Assets.logo),),
       ),
       nextScreen: Wrapper(),
       splashTransition: SplashTransition.scaleTransition,

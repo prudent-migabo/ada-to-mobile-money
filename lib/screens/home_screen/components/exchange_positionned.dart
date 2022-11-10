@@ -25,11 +25,11 @@ class _ExchangePositionnedState extends State<ExchangePositionned> {
         top: 550,
         left: 70,
         child: SizedBox(
-          width: 210,
-          height: 60,
+          width: 190,
+          height: 50,
           child: RoundedButtonWithIcon(
             borderColor: Colors.transparent,
-            label: Text('Exchange ADA'),
+            label: Text('Exchange ADA', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
             primary: Colors.lightBlueAccent.shade400,
             radius: 30,
             icon: Icon(Icons.cached_rounded),

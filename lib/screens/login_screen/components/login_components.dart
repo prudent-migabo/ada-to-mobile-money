@@ -77,7 +77,7 @@ class _LoginComponentsState extends State<LoginComponents> {
               child: Image(
                 width: 80,
                   height: 80,
-                  image: AssetImage(logo))),
+                  image: AssetImage(Assets.logo))),
           SizedBox(height: 50,),
           Text('Login', style: TextStyle(color: kMainColor, fontSize: 35, fontWeight: FontWeight.bold),),
           SizedBox(height: 15,),
@@ -105,9 +105,9 @@ class _LoginComponentsState extends State<LoginComponents> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ContainerForLogos(image: AssetImage(gmailLogo), onTap: _googleSignIn,),
+              ContainerForLogos(image: AssetImage(Assets.gmailLogo), onTap: _googleSignIn,),
               SizedBox(width: 15,),
-              ContainerForLogos(image: AssetImage(facebookLogo), onTap: _faceBookSignIn,),
+              ContainerForLogos(image: AssetImage(Assets.facebookLogo), onTap: _faceBookSignIn,),
             ],
           ),
           SizedBox(height: 20,),
