@@ -28,7 +28,7 @@ class SuccessfulRegistrationScreen extends StatelessWidget {
             Image(image: AssetImage(Assets.cup)),
             SizedBox(height: 120,),
             CustomButton(text: 'Proceed', onPressed: (){
-              Navigator.pushNamedAndRemoveUntil(context, LoginScreen.routeName, (route) => false);
+              Navigator.pushNamedAndRemoveUntil(context, BottomNavigationScreen.routeName, (route) => false);
             }, width: width, height: 60,),
           ],
         ),

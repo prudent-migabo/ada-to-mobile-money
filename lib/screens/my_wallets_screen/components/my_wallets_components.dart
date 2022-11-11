@@ -58,7 +58,7 @@ class MyWalletsComponents extends StatelessWidget {
                             icon: Icon(Icons.delete_outline_outlined, color: primary, size: 15,),
                             onPressed: (){},
                             label: Text('Delete', style: TextStyle(fontSize: 12, color: primary),),
-                            primary: Colors.blue[50],
+                            primary: Color(0xffe8f0f7),
                             borderColor: primary,
                             elevation: 0.0,
                           ),

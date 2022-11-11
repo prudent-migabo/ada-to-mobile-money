@@ -22,7 +22,7 @@ class _ExchangePositionnedState extends State<ExchangePositionned> {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        top: 550,
+        top: 570,
         left: 70,
         child: SizedBox(
           width: 190,

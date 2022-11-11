@@ -75,8 +75,8 @@ class _LoginComponentsState extends State<LoginComponents> {
           Align(
             alignment: Alignment.center,
               child: Image(
-                width: 80,
-                  height: 80,
+                width: 100,
+                  height: 100,
                   image: AssetImage(Assets.logo))),
           SizedBox(height: 50,),
           Text('Login', style: TextStyle(color: kMainColor, fontSize: 35, fontWeight: FontWeight.bold),),

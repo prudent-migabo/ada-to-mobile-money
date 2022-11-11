@@ -22,20 +22,23 @@ class TransactionComponents extends StatelessWidget {
       children: [
          SizedBox(height: 40,),
         Container(
-          padding: EdgeInsets.only(left: 30, right: 15),
+          padding: EdgeInsets.only(left: 30,),
             child: Row(
               children: [
                 Text('Transactions', style: TextStyle(fontSize: 30, color: kMainColor, fontWeight: boldStyle),),
-                SizedBox(width: 10,),
+                // DropdownButtonFormField(
+                //   items: ListHelper().transactionsDays.map(buildMenuItem).toList(),
+                //   onChanged: (value) {},
+                // )
                 DropdownButton(
                   borderRadius: BorderRadius.circular(10),
-                  dropdownColor: Colors.red,
+                  underline: Container(),
                   items: ListHelper().transactionsDays.map(buildMenuItem).toList(),
                   onChanged: (value) {},
                 ),
               ],
             )),
-        SizedBox(height: 30,),
+        SizedBox(height: 15,),
         Expanded(
           child: ListView.builder(
             padding: EdgeInsets.symmetric(horizontal: 20),
@@ -73,7 +76,7 @@ class TransactionComponents extends StatelessWidget {
                         ),
                       ),
                     ),
-                     SizedBox(height: 15,),
+                     SizedBox(height: 10,),
                   ],
                 );
               }),

@@ -73,7 +73,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
 
   @override
   Widget build(BuildContext context) => isEmailVerified
-      ? BottomNavigationScreen()
+      ? SuccessfulRegistrationScreen()
       : Scaffold(
     body: SingleChildScrollView(
       child: Padding(

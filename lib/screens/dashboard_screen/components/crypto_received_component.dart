@@ -60,19 +60,21 @@ class _CryptoReceivedComponentState extends State<CryptoReceivedComponent> {
             padding: EdgeInsets.symmetric(vertical: 10),
             decoration: containerRoundedForDash().copyWith(color: kMainColor),
             child: Center(
-              child: StreamBuilder<PriceModel>(
-                stream: context.watch<ConversionPriceRepository>().getAmountFromSnapshot('cardano'),
-                builder: (context, snapshot) {
-                  PriceModel? priceModel = snapshot.data;
-                  if(!snapshot.hasData){
-                    return Text('Empty');
-                  }
-                  return Column(
+              child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 15,),
                       Text('ADA Received', style: TextStyle(color: whiteColor, fontSize: 16),),
-                      Text("\$${getValue(priceModel!.value)}" != "" ? "\$${getValue(priceModel.value)}" : "\$00.00" , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: whiteColor),),
+                      StreamBuilder<PriceModel>(
+                        stream: context.watch<ConversionPriceRepository>().getAmountFromSnapshot('cardano'),
+                        builder: (context, snapshot) {
+                          PriceModel? priceModel = snapshot.data;
+                          if(!snapshot.hasData){
+                            return Text('\$00.0');
+                          }
+                          return Text("\$${getValue(priceModel!.value)}" != "" ? "\$${getValue(priceModel.value)}" : "\$00.00" , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: whiteColor),);
+                        }
+                      ),
                       SizedBox(
                         width: 150,
                         child: RoundedButtonWithIcon(
@@ -85,9 +87,8 @@ class _CryptoReceivedComponentState extends State<CryptoReceivedComponent> {
                           ),
                         ),
                     ],
-                  );
-                }
-              ),
+                  ),
+
             ),
           )),
         ],

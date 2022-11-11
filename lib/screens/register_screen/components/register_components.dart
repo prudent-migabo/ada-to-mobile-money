@@ -92,7 +92,7 @@ class _RegisterComponentsState extends State<RegisterComponents> {
                 favorite: ["+256", "UG", "+243", "CD"],
               ),
             ),
-              validator: (value) => value!.isEmpty? "Can't be empty": null,
+              validator: (value) => value!.isEmpty? "Can't be empty": value.length >=10 ? 'Invalid phone number' : null,
           ),
 
           FieldLabels(text: 'Email'),
