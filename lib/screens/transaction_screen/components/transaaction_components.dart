@@ -5,6 +5,14 @@ import '../../../utils/utils.dart';
 
 class TransactionComponents extends StatelessWidget {
   const TransactionComponents({Key? key}) : super(key: key);
+  DropdownMenuItem<String> buildMenuItem(String item) {
+    return DropdownMenuItem(
+        value: item,
+        child: Text(
+          item,
+          style: const TextStyle(fontSize: 11),
+        ));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +22,19 @@ class TransactionComponents extends StatelessWidget {
       children: [
          SizedBox(height: 40,),
         Container(
-          padding: EdgeInsets.only(left: 35),
-            child: Text('Transactions', style: TextStyle(fontSize: 30, color: kMainColor, fontWeight: boldStyle),)),
+          padding: EdgeInsets.only(left: 30, right: 15),
+            child: Row(
+              children: [
+                Text('Transactions', style: TextStyle(fontSize: 30, color: kMainColor, fontWeight: boldStyle),),
+                SizedBox(width: 10,),
+                DropdownButton(
+                  borderRadius: BorderRadius.circular(10),
+                  dropdownColor: Colors.red,
+                  items: ListHelper().transactionsDays.map(buildMenuItem).toList(),
+                  onChanged: (value) {},
+                ),
+              ],
+            )),
         SizedBox(height: 30,),
         Expanded(
           child: ListView.builder(

@@ -7,3 +7,4 @@ export 'isLoading/isLoading.dart';
 export 'wrapper/wrapper.dart';
 export 'isLoading/isConverting.dart';
 export 'card_for_profile_info/card_for_profile_info.dart';
+export 'custom_popup/custom_popup.dart';

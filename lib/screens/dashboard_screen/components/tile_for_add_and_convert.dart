@@ -1,3 +1,4 @@
+import 'package:crypto_mob_app/screens/create_wallet_screen/components/components.dart';
 import 'package:crypto_mob_app/screens/dashboard_screen/components/components.dart';
 import 'package:crypto_mob_app/screens/screens.dart';
 import 'package:crypto_mob_app/utils/utils.dart';
@@ -17,7 +18,7 @@ class TileForAddAndConvert extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
           child: ListTile(
             onTap: (){
-              Navigator.pushNamed(context, CreateWalletScreen.routeName);
+              bottomSheetCreateRestore(context);
             },
             leading: CircleAvatar(
               radius: 20,
