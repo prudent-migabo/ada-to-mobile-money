@@ -60,7 +60,7 @@ class _LoginComponentsState extends State<LoginComponents> {
     if(state.loginStatus == LoginStatus.isLoaded){
       WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
         Fluttertoast.showToast(msg: "Welcome");
-        Navigator.pushNamed(context, EmailVerificationScreen.routeName);
+        Navigator.pushNamed(context, BottomNavigationScreen.routeName);
         _emailController.clear();
         _passwordController.clear();
       });
@@ -107,14 +107,14 @@ class _LoginComponentsState extends State<LoginComponents> {
             children: [
               ContainerForLogos(image: AssetImage(Assets.gmailLogo), onTap: _googleSignIn,),
               SizedBox(width: 15,),
-              ContainerForLogos(image: AssetImage(Assets.facebookLogo), onTap: _faceBookSignIn,),
+              ContainerForLogos(image: AssetImage(Assets.facebookLogo), onTap: (){},),
             ],
           ),
           SizedBox(height: 20,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('New to ADA?'),
+              Text('New to ADA?'),  
               TextButton(onPressed: (){
                 context.read<RegisterProvider>().initialState();
                 Navigator.pushNamed(context, RegisterScreen.routeName);

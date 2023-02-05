@@ -31,7 +31,7 @@ class _RegisterComponentsState extends State<RegisterComponents> {
 
   void _onSubmit() async{
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      Navigator.pushNamed(context, EmailVerificationScreen.routeName);
+      Navigator.pushNamed(context, SuccessfulRegistrationScreen.routeName);
       _firstNameController.clear();
       _secondNameController.clear();
       _lastNameController.clear();

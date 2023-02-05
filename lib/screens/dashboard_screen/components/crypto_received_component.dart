@@ -63,14 +63,14 @@ class _CryptoReceivedComponentState extends State<CryptoReceivedComponent> {
               child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(height: 15,),
-                      Text('ADA Received', style: TextStyle(color: whiteColor, fontSize: 16),),
+                     const SizedBox(height: 15,),
+                      const Text('ADA Received', style: TextStyle(color: whiteColor, fontSize: 16),),
                       StreamBuilder<PriceModel>(
                         stream: context.watch<ConversionPriceRepository>().getAmountFromSnapshot('cardano'),
                         builder: (context, snapshot) {
                           PriceModel? priceModel = snapshot.data;
                           if(!snapshot.hasData){
-                            return Text('\$00.0');
+                            return const Text('\$00.0', style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: whiteColor));
                           }
                           return Text("\$${getValue(priceModel!.value)}" != "" ? "\$${getValue(priceModel.value)}" : "\$00.00" , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: whiteColor),);
                         }
