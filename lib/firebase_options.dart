@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAaVC0Dab92ixQPHYOrKD9meV8P3Gyua5Y',
-    appId: '1:182992590023:android:5dd454b97f596038151ae2',
-    messagingSenderId: '182992590023',
-    projectId: 'crypto-mob-app',
-    storageBucket: 'crypto-mob-app.appspot.com',
+    apiKey: 'AIzaSyAkhKXCyuydS6a2B-cUFlbG94Y7eWlOM6M',
+    appId: '1:177239032113:android:fb2e1a67056184ba4d7010',
+    messagingSenderId: '177239032113',
+    projectId: 'ada-to-mobile-money',
+    storageBucket: 'ada-to-mobile-money.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBES4IrL--R6tZoCGI16S1nZ7CJrrFDNMs',
-    appId: '1:182992590023:ios:e46270ec2a65d0c8151ae2',
-    messagingSenderId: '182992590023',
-    projectId: 'crypto-mob-app',
-    storageBucket: 'crypto-mob-app.appspot.com',
-    iosClientId: '182992590023-r6o332eflb2q2h06l6b3o1bu2phnqq39.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB9XHYSX-Fn6PwtcUxnXf0IXkKjba04oqQ',
+    appId: '1:177239032113:ios:542109a018b37fdb4d7010',
+    messagingSenderId: '177239032113',
+    projectId: 'ada-to-mobile-money',
+    storageBucket: 'ada-to-mobile-money.appspot.com',
+    iosClientId: '177239032113-gb0n2pcbnc5epcorj2gmq83o01if8pkp.apps.googleusercontent.com',
     iosBundleId: 'com.example.cryptoMobApp',
   );
 }

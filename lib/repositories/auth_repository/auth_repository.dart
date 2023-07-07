@@ -1,4 +1,3 @@
-
 import 'package:crypto_mob_app/models/models.dart';
 import 'package:crypto_mob_app/utils/utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -84,15 +83,6 @@ class AuthRepository{
     }
   }
 
-  //   final LoginResult loginResult = await FacebookAuth.instance.login(
-  //       permissions: [
-  //         'email', 'public_profile', 'user_birthday'
-  //       ]
-  //   );
-  //
-  //   final OAuthCredential facebookAuthCredential = FacebookAuthProvider.credential(loginResult.accessToken!.token);
-  //   return FirebaseAuth.instance.signInWithCredential(facebookAuthCredential);
-  // }
 
   Future<void> signOutUSer() async{
     await auth.signOut();

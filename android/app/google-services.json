@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "182992590023",
-    "project_id": "crypto-mob-app",
-    "storage_bucket": "crypto-mob-app.appspot.com"
+    "project_number": "177239032113",
+    "project_id": "ada-to-mobile-money",
+    "storage_bucket": "ada-to-mobile-money.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:182992590023:android:5dd454b97f596038151ae2",
+        "mobilesdk_app_id": "1:177239032113:android:fb2e1a67056184ba4d7010",
         "android_client_info": {
           "package_name": "com.example.crypto_mob_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "182992590023-86ni76kf281jcuv9e0hu27hufes9fenu.apps.googleusercontent.com",
+          "client_id": "177239032113-mn3e10u5nt06fi4f9odvv86delgsbkrh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAaVC0Dab92ixQPHYOrKD9meV8P3Gyua5Y"
+          "current_key": "AIzaSyAkhKXCyuydS6a2B-cUFlbG94Y7eWlOM6M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "182992590023-86ni76kf281jcuv9e0hu27hufes9fenu.apps.googleusercontent.com",
+              "client_id": "177239032113-mn3e10u5nt06fi4f9odvv86delgsbkrh.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "177239032113-gb0n2pcbnc5epcorj2gmq83o01if8pkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cryptoMobApp"
+              }
             }
           ]
         }

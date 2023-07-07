@@ -8,7 +8,7 @@ class ConversionPriceRepository{
 
   Future<double> getEquivalentPrice(String id) async{
     try{
-      var data = await ApiService().getPrice('https://api.coingecko.com/api/v3/coins/' + id);
+      var data = await ApiService().getPrice('https://api.coingecko.com/api/v3/coins/$id');
       PriceModel priceModel = PriceModel.fromMap(data);
       return priceModel.value;
     } on CustomError catch(e){
